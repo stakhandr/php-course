@@ -2,10 +2,11 @@
         
 function pyramid (string $text) : string
 {
+    $length = mb_strlen ($text);
     $arr1 = mb_str_split($text);
     $arr2 = [];
  
-    for ($i = mb_strlen ($text) - 1; $i >= 0; $i--) {
+    for ($i = $length - 1; $i >= 0; $i--) {
         $arr2[] = $arr1[$i];
     }
     

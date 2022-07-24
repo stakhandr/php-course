@@ -2,9 +2,10 @@
  
 function outputSymbols (string $str, string $symb) : string
 {
+    $symbAmount = substr_count ($str, $symb);
     $arr = [];
    
-    for ($i = 1; $i <= substr_count ($str, $symb); $i++) {
+    for ($i = 1; $i <= $symbAmount; $i++) {
         $arr[] = $symb;
     }
     
